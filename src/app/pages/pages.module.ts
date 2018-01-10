@@ -16,6 +16,7 @@ import { ChartsModule } from 'ng2-charts';
 
 // routes
 import { PAGES_ROUTES } from './pages.routes';
+import { AccountSettingsComponent } from './account-settings/account-settings.component';
 
 @NgModule({
     declarations: [
@@ -24,7 +25,8 @@ import { PAGES_ROUTES } from './pages.routes';
         DashboardComponent,
         ProgressComponent,
         IncrementadorComponent,
-        GraficodonaComponent
+        GraficodonaComponent,
+        AccountSettingsComponent
     ],
     exports: [
         PagesComponent,
@@ -37,6 +39,7 @@ import { PAGES_ROUTES } from './pages.routes';
         PAGES_ROUTES,
         FormsModule,
         ChartsModule
-    ]
+    ],
+    providers: []
 })
 export class PagesModule {}

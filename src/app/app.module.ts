@@ -12,6 +12,10 @@ import { PagesComponent } from './pages/pages.component';
 
 // Modulos
 import { PagesModule } from './pages/pages.module';
+import { FormsModule } from '@angular/forms';
+
+// Servicios
+import { ServiceModule } from './services/service.module';
 
 
 @NgModule({
@@ -23,7 +27,9 @@ import { PagesModule } from './pages/pages.module';
   imports: [
     BrowserModule,
     APP_ROUTES,
-    PagesModule
+    PagesModule,
+    ServiceModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
